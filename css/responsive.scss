@@ -1,0 +1,315 @@
+@media screen and(min-width:1180px) {
+  /* ヘルパークラス */
+  .hp_pc-br {
+    display: none;
+  }
+}
+
+/*--------------------------------
+タブレット
+--------------------------------*/
+@media screen and(max-width:959px) {
+  .ly_fv {
+    background-position-x: 53%;
+    background-size: cover;
+    .el_fv_maincopy {
+      top: 10%;
+    }
+    .el_sailprice {
+      top: 25%;
+    }
+    .el_campaign {
+      top: 50%;
+    }
+    .el_fv_message {
+      top: 80%;
+    }
+  }
+  #reason08 {
+    .bl_section {
+      justify-content: center;
+    }
+    .bl_section_imgWrapper > img {
+      width: 120px;
+    }
+    .bl_section_card {
+      width: 40%;
+      &:nth-child(1) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  /* ヘルパークラス */
+  .hp_br-tb {
+    display: block;
+  }
+  .hp_br-pc {
+    display: none;
+  }
+  .hp_column_tb {
+    flex-direction: column !important;
+  }
+  .hp_column_tb-reverse {
+    flex-direction: column-reverse !important;
+  }
+  .hp_mtLg {
+    margin-top: 80px;
+  }
+  .hp_mbLg {
+    margin-bottom: 80px;
+  }
+  .hp_mtMd {
+    margin-top: 50px;
+  }
+  .hp_mbMd {
+    margin-bottom: 50px;
+  }
+  .hp_mtSm {
+    margin-top: 20px;
+  }
+  .hp_mbSm {
+    margin-bottom: 20px;
+  }
+
+  .hp_ptLg {
+    padding-top: 80px;
+  }
+  .hp_pbLg {
+    padding-bottom: 80px;
+  }
+  .hp_ptMd {
+    padding-top: 50px;
+  }
+  .hp_pbMd {
+    padding-bottom: 50px;
+  }
+  .hp_ptSm {
+    padding-top: 20px;
+  }
+  .hp_pbSm {
+    padding-bottom: 20px;
+  }
+}
+/*--------------------------------
+タブレット(小)
+--------------------------------*/
+@media screen and(max-width:768px) {
+  #reason08 {
+    .bl_section {
+      justify-content: space-evenly;
+    }
+    .bl_section_card {
+      width: 80%;
+      &:nth-child(1) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(2) {
+        margin-bottom: 30px;
+      }
+      &:nth-child(3) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  #mens.ly_section {
+    &::before {
+      visibility: visible;
+    }
+    &::after {
+      visibility: visible;
+    }
+  }
+  #faq-p {
+    .bl_faq {
+      &_item {
+        &_question {
+          padding-left: 20px;
+          padding-right: 0;
+          div i {
+            font-size: 3rem;
+          }
+        }
+      }
+    }
+    #question .bl_faq_container .bl_faq_list:first-child::after {
+      width: 150px;
+      height: 150px;
+      top: -90.5px;
+      right: -71px;
+    }
+    .bl_faq_container {
+      position: relative;
+      .bl_faq_list:first-child::after {
+      }
+    }
+    .bl_faq_item_answer {
+      padding-left: 30px;
+      padding-right: 10px;
+    }
+  }
+}
+
+/*--------------------------------
+スマホ
+--------------------------------*/
+@media screen and(max-width:519px) {
+  /* フォントサイズ */
+  body {
+    font-size: 1.4rem;
+  }
+  header {
+    .el_btn {
+      width: 140px;
+    }
+  }
+  .bl_section_ttl {
+    font-size: 2.5rem;
+  }
+  .el_section_ttl{
+    font-size: 3rem;
+  }
+  /* ファーストビュー */
+  .ly_fv {
+    .el_fv_maincopy {
+      top: 10%;
+      width: 85%;
+    }
+    .el_sailprice {
+      top: 28%;
+      width: 80%;
+    }
+    .el_campaign {
+      top: 60%;
+      width: 85%;
+    }
+    .el_fv_message {
+      display: none;
+    }
+  }
+  header{
+    .el_logo{
+      width: 130px;
+    }
+  }
+  /* イントロセクション */
+  #intro {
+    .bl_section_wrapper {
+      gap: 20px;
+      flex-wrap: wrap;
+      .bl_section_balloon {
+        width: 127px;
+        height: 70px;
+        padding: 10px;
+        P {
+          line-height: 1.5;
+        }
+      }
+    }
+    .bl_section_ttl {
+      &::after {
+        top: -60px;
+        right: 30px;
+      }
+    }
+  }
+  .el_reason_head {
+    .el_reason_wrapper {
+      img {
+        top: 40px;
+        right: -110px;
+      }
+    }
+  }
+  #reason08 {
+    .bl_section {
+      justify-content: space-evenly;
+      &_body {
+        text-align: center;
+      }
+      &_txt {
+        width: 80%;
+        margin: 0 auto;
+        &.balloon-top {
+          margin-top: 30px;
+        }
+      }
+      &_card {
+        width: 100%;
+        margin-bottom: 30px;
+      }
+    }
+    .bl_section_imgWrapper > img {
+      width: 120px;
+    }
+  }
+  #flow {
+    .bl_section {
+      position: relative;
+      &_header {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 3rem;
+        margin-bottom: 20px;
+        img {
+          position: absolute;
+          width: 50px;
+          top: 40px;
+          left: 0;
+          transform: translateY(-50%);
+        }
+      }
+    }
+  }
+  /* ヘルパークラス */
+  .hp_br-sp {
+    display: block;
+  }
+
+  .hp_column_sp {
+    flex-direction: column !important;
+  }
+  .hp_column_sp-reverse {
+    flex-direction: column-reverse !important;
+  }
+
+  .hp_mtLg {
+    margin-top: 60px;
+  }
+  .hp_mbLg {
+    margin-bottom: 60px;
+  }
+  .hp_mtMd {
+    margin-top: 40px;
+  }
+  .hp_mbMd {
+    margin-bottom: 40px;
+  }
+  .hp_mtSm {
+    margin-top: 15px;
+  }
+  .hp_mbSm {
+    margin-bottom: 15px;
+  }
+
+  .hp_ptLg {
+    padding-top: 60px;
+  }
+  .hp_pbLg {
+    padding-bottom: 60px;
+  }
+  .hp_ptMd {
+    padding-top: 40px;
+  }
+  .hp_pbMd {
+    padding-bottom: 40px;
+  }
+  .hp_ptSm {
+    padding-top: 15px;
+  }
+  .hp_pbSm {
+    padding-bottom: 15px;
+  }
+}
