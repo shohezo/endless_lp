@@ -155,7 +155,7 @@
 @media screen and (max-width: 519px) {
   /* フォントサイズ */
   body {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   header .el_btn {
     width: 140px;
@@ -203,9 +203,20 @@
     top: -60px;
     right: 30px;
   }
-  .el_reason_head .el_reason_wrapper img {
+  #intro .bl_section_ttl::before {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    left: -260px;
+  }
+  .el_reason_head .el_reason_wrapper {
+    margin-left: 10vw;
+  }
+  .el_reason_head img {
     top: 40px;
     right: -110px;
+  }
+  #reason04 .el_section_ttl::after {
+    left: -20px;
   }
   #reason08 .bl_section {
     -webkit-box-pack: space-evenly;
@@ -229,6 +240,21 @@
   #reason08 .bl_section_imgWrapper > img {
     width: 120px;
   }
+  #parts .el_section_ttl::before {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    left: -390px;
+    top: -290px;
+  }
+  #cta .bl_section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #cta .bl_section .el_btn:first-child {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
   #flow .bl_section {
     position: relative;
   }
@@ -240,7 +266,7 @@
   }
   #flow .bl_section_header img {
     position: absolute;
-    width: 50px;
+    width: 110px;
     top: 40px;
     left: 0;
     -webkit-transform: translateY(-50%);

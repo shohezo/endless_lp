@@ -158,7 +158,7 @@
 @media screen and(max-width:519px) {
   /* フォントサイズ */
   body {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   header {
     .el_btn {
@@ -168,7 +168,7 @@
   .bl_section_ttl {
     font-size: 2.5rem;
   }
-  .el_section_ttl{
+  .el_section_ttl {
     font-size: 3rem;
   }
   /* ファーストビュー */
@@ -189,8 +189,8 @@
       display: none;
     }
   }
-  header{
-    .el_logo{
+  header {
+    .el_logo {
       width: 130px;
     }
   }
@@ -213,13 +213,26 @@
         top: -60px;
         right: 30px;
       }
+      &::before {
+        transform: scale(0.2);
+        left: -260px;
+      }
     }
   }
   .el_reason_head {
     .el_reason_wrapper {
-      img {
-        top: 40px;
-        right: -110px;
+      margin-left: 10vw;
+    }
+    img {
+      top: 40px;
+      right: -110px;
+    }
+  }
+
+  #reason04 {
+    .el_section_ttl {
+      &::after {
+        left: -20px;
       }
     }
   }
@@ -245,6 +258,26 @@
       width: 120px;
     }
   }
+  #parts {
+    .el_section_ttl {
+      &::before {
+        transform: scale(0.2);
+        left: -390px;
+        top: -290px;
+      }
+    }
+  }
+  #cta {
+    .bl_section {
+      align-items: center;
+      .el_btn {
+        &:first-child {
+          margin-right: 0px;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
   #flow {
     .bl_section {
       position: relative;
@@ -255,7 +288,7 @@
         margin-bottom: 20px;
         img {
           position: absolute;
-          width: 50px;
+          width: 110px;
           top: 40px;
           left: 0;
           transform: translateY(-50%);

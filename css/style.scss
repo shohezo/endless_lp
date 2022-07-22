@@ -4,7 +4,7 @@ html {
 }
 body {
   color: #141414;
-  font-size: 1.6rem;
+  font-size: 2rem;
   counter-reset: number 0;
   line-height: 1.8;
   // overflow: hidden;
@@ -61,7 +61,7 @@ $primary: #35cec4;
   display: inline-block;
   width: 180px;
   max-width: 100%;
-  padding: 15px 15px;
+  padding: 15px 30px;
   background-color: $primary;
   border: 2px solid transparent;
   color: #fff;
@@ -84,10 +84,24 @@ $primary: #35cec4;
 }
 .el_btn.el_btn__line {
   line-height: 1.2;
-  padding: 5px 0px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  font-size: 2rem;
+  img {
+    width: 30px;
+  }
+}
+.el_btn.el_btn__tel {
+  line-height: 2.2;
+  font-weight: bold;
+  font-size: 2rem;
   img {
     width: 30px;
     margin-right: 1rem;
+  }
+  .fa-phone {
+    color: $white;
+    margin-right: 0.3em;
   }
 }
 .el_logo {
@@ -115,7 +129,7 @@ $primary: #35cec4;
   }
 }
 .el_section_ttl_num {
-  width: 100px;
+  width: 260px;
   display: table;
   margin-right: auto;
   margin-left: auto;
@@ -179,9 +193,9 @@ header {
   }
   .el_campaign {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 8%;
-    width: clamp(300px, 70%, 800px);
+    width: clamp(300px, 70%, 500px);
   }
   .el_fv_message {
     position: absolute;
@@ -197,9 +211,48 @@ header {
   background-color: rgba(54, 206, 196, 0.185);
   overflow: hidden;
   h2 {
+    z-index: 2;
+    display: inline-block;
     text-align: center;
+    large {
+      font-size: 130%;
+    }
+    img {
+      width: 80px;
+    }
+    > div {
+      display: inline-block;
+      // background-color: $red;
+      // color: $white;
+      // padding: 3px 10px;
+      // border-radius: 5px;
+      // letter-spacing: 0.1em;
+      font-size: 120%;
+    }
+  }
+  .deco {
+    position: relative;
+    &::after {
+      content: url(/img/stars-left.png);
+      z-index: -1;
+      transform: scale(0.3);
+      top: -160px;
+      left: -220px;
+      display: inline-block;
+      position: absolute;
+    }
+    &::before {
+      content: url(/img/stars-right.png);
+      z-index: -1;
+      transform: scale(0.3);
+      top: -110px;
+      right: -220px;
+      display: inline-block;
+      position: absolute;
+    }
   }
   .bl_section_ttl {
+    color: $navy;
     position: relative;
     display: inline;
     &::after {
@@ -213,11 +266,19 @@ header {
       z-index: -1;
       transform: scale(0.1) rotate(20deg);
     }
+    &::before {
+      content: url(/img/tornado-1.png);
+      transform: scale(0.3);
+      top: -260px;
+      left: -289.7px;
+      display: inline-block;
+      position: absolute;
+    }
   }
   .bl_section {
     &_body {
       max-width: 600px;
-      margin: 30px;
+      margin: 30px 0px 60px 0px;
       span {
         font-weight: bold;
         color: $red;
@@ -302,7 +363,6 @@ header {
 .el_reason_head {
   overflow-x: clip;
   overflow-y: visible;
-
   background-color: $primary;
   color: $white;
   text-shadow: $black;
@@ -373,6 +433,39 @@ header {
     }
     &_img {
       max-width: 700px;
+    }
+  }
+}
+#reason02 {
+  .bl_section_img {
+    border: 15px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+  }
+  .el_section_ttl {
+    position: relative;
+    display: inline-block;
+    &::before {
+      content: url(/img/hobo.png);
+      transform: scale(0.2) rotate(-20deg);
+      top: -160px;
+      left: -240px;
+      display: inline-block;
+      position: absolute;
+    }
+  }
+}
+#reason04 {
+  overflow: hidden;
+  .el_section_ttl {
+    position: relative;
+    display: inline-block;
+    &::after {
+      content: url(/img/sakura.png);
+      transform: scale(0.2);
+      top: -320px;
+      left: 40px;
+      display: inline-block;
+      position: absolute;
     }
   }
 }
@@ -450,6 +543,32 @@ header {
       gap: 10%;
     }
   }
+  .el_section_ttl {
+    position: relative;
+    display: inline-block;
+    z-index: 0;
+    &::before {
+      content: url(/img/parts_banner.png);
+      transform: scale(0.3);
+      z-index: -1;
+      top: -250px;
+      left: -470px;
+      display: inline-block;
+      position: absolute;
+    }
+  }
+}
+#cta {
+  .bl_section {
+    margin-right: 0;
+    margin-left: 0;
+    max-width: 100%;
+    .el_btn {
+      &:first-child {
+        margin-right: 20px;
+      }
+    }
+  }
 }
 #flow {
   .bl_section {
@@ -464,6 +583,10 @@ header {
         top: 0;
         left: 0px;
       }
+    }
+    &_img {
+      border: 15px solid rgba(255, 255, 255, 1);
+      box-sizing: border-box;
     }
   }
   i {
@@ -509,6 +632,10 @@ header {
     left: 50%;
     transform: translateX(-50%);
   }
+  .bl_section_img {
+    border: 15px solid rgba(255, 255, 255, 1);
+    box-sizing: border-box;
+  }
 }
 #whitening {
   padding-left: 0vw;
@@ -526,6 +653,72 @@ header {
         left: -20px;
         content: url(/img/jitsuwa.png);
       }
+    }
+  }
+}
+.el_reason_head2 {
+  overflow-x: clip;
+  overflow-y: visible;
+  background-color: $primary;
+  color: $white;
+  text-shadow: $black;
+  -moz-text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.19);
+  -webkit-text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.19);
+  -ms-text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.19);
+  text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.19);
+  .el_reason_wrapper {
+    position: relative;
+    padding: 30px 4vw;
+    max-width: 700px;
+    line-height: 1.1;
+    img {
+      width: 250px;
+      top: 80px;
+      position: absolute;
+      right: 0px;
+      transform: rotate(5deg);
+    }
+    &::after,
+    &::before {
+      border: solid transparent;
+      content: "";
+      height: 0;
+      width: 0;
+      pointer-events: none;
+      position: absolute;
+      top: 99%;
+      left: 50%;
+      transform: translateX(-3%);
+    }
+    &::after {
+      // border-color: $black;
+      border-top-width: 20px;
+      border-bottom-width: 20px;
+      border-left-width: 20px;
+      border-right-width: 20px;
+      margin-left: -20px;
+      border-top-color: $primary;
+    }
+    &::before {
+      border-color: rgba(0, 0, 0, 0);
+      border-top-width: 22px;
+      border-bottom-width: 22px;
+      border-left-width: 22px;
+      border-right-width: 22px;
+      margin-left: -22px;
+      margin-top: 1px;
+      border-top-color: $primary;
+      z-index: 1;
+    }
+  }
+  p {
+    font-size: 5rem;
+    font-weight: bold;
+    small {
+      font-size: 60%;
+    }
+    span {
+      font-size: 10rem;
     }
   }
 }
@@ -621,8 +814,9 @@ header {
   }
 }
 #access {
+  box-sizing: border-box;
   .el_logo {
-    width: clamp(150px, 300px, 400px);
+    width: clamp(150px, 250px, 400px);
   }
   .bl_section {
     text-align: center;
@@ -668,6 +862,7 @@ footer {
   padding-bottom: 10px;
   small {
     color: $white;
+    font-size: 1rem;
   }
   .bl_production {
     display: inline-flex;
@@ -682,3 +877,6 @@ footer {
     }
   }
 }
+// * {
+//   outline: 1px solid magenta;
+// }

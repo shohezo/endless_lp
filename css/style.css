@@ -5,7 +5,7 @@ html {
 
 body {
   color: #141414;
-  font-size: 1.6rem;
+  font-size: 2rem;
   counter-reset: number 0;
   line-height: 1.8;
   letter-spacing: 0.05em;
@@ -50,7 +50,7 @@ h2 {
   display: inline-block;
   width: 180px;
   max-width: 100%;
-  padding: 15px 15px;
+  padding: 15px 30px;
   background-color: #35cec4;
   border: 2px solid transparent;
   color: #fff;
@@ -73,12 +73,29 @@ h2 {
 
 .el_btn.el_btn__line {
   line-height: 1.2;
-  padding: 5px 0px;
+  font-weight: bold;
+  letter-spacing: 0.2em;
+  font-size: 2rem;
 }
 
 .el_btn.el_btn__line img {
   width: 30px;
+}
+
+.el_btn.el_btn__tel {
+  line-height: 2.2;
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.el_btn.el_btn__tel img {
+  width: 30px;
   margin-right: 1rem;
+}
+
+.el_btn.el_btn__tel .fa-phone {
+  color: #ffffff;
+  margin-right: 0.3em;
 }
 
 .el_logo {
@@ -112,7 +129,7 @@ h2 {
 }
 
 .el_section_ttl_num {
-  width: 100px;
+  width: 260px;
   display: table;
   margin-right: auto;
   margin-left: auto;
@@ -184,9 +201,9 @@ header .el_logo {
 
 .ly_fv .el_campaign {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 8%;
-  width: clamp(300px, 70%, 800px);
+  width: clamp(300px, 70%, 500px);
 }
 
 .ly_fv .el_fv_message {
@@ -205,10 +222,52 @@ header .el_logo {
 }
 
 #intro h2 {
+  z-index: 2;
+  display: inline-block;
   text-align: center;
 }
 
+#intro h2 large {
+  font-size: 130%;
+}
+
+#intro h2 img {
+  width: 80px;
+}
+
+#intro h2 > div {
+  display: inline-block;
+  font-size: 120%;
+}
+
+#intro .deco {
+  position: relative;
+}
+
+#intro .deco::after {
+  content: url(/img/stars-left.png);
+  z-index: -1;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  top: -160px;
+  left: -220px;
+  display: inline-block;
+  position: absolute;
+}
+
+#intro .deco::before {
+  content: url(/img/stars-right.png);
+  z-index: -1;
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  top: -110px;
+  right: -220px;
+  display: inline-block;
+  position: absolute;
+}
+
 #intro .bl_section_ttl {
+  color: #272534;
   position: relative;
   display: inline;
 }
@@ -226,9 +285,19 @@ header .el_logo {
           transform: scale(0.1) rotate(20deg);
 }
 
+#intro .bl_section_ttl::before {
+  content: url(/img/tornado-1.png);
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  top: -260px;
+  left: -289.7px;
+  display: inline-block;
+  position: absolute;
+}
+
 #intro .bl_section_body {
   max-width: 600px;
-  margin: 30px;
+  margin: 30px 0px 60px 0px;
 }
 
 #intro .bl_section_body span {
@@ -404,6 +473,46 @@ header .el_logo {
   max-width: 700px;
 }
 
+#reason02 .bl_section_img {
+  border: 15px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#reason02 .el_section_ttl {
+  position: relative;
+  display: inline-block;
+}
+
+#reason02 .el_section_ttl::before {
+  content: url(/img/hobo.png);
+  -webkit-transform: scale(0.2) rotate(-20deg);
+          transform: scale(0.2) rotate(-20deg);
+  top: -160px;
+  left: -240px;
+  display: inline-block;
+  position: absolute;
+}
+
+#reason04 {
+  overflow: hidden;
+}
+
+#reason04 .el_section_ttl {
+  position: relative;
+  display: inline-block;
+}
+
+#reason04 .el_section_ttl::after {
+  content: url(/img/sakura.png);
+  -webkit-transform: scale(0.2);
+          transform: scale(0.2);
+  top: -320px;
+  left: 40px;
+  display: inline-block;
+  position: absolute;
+}
+
 #reason06 .bl_section_img img {
   margin-left: -30px;
 }
@@ -497,6 +606,33 @@ header .el_logo {
   gap: 10%;
 }
 
+#parts .el_section_ttl {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+#parts .el_section_ttl::before {
+  content: url(/img/parts_banner.png);
+  -webkit-transform: scale(0.3);
+          transform: scale(0.3);
+  z-index: -1;
+  top: -250px;
+  left: -470px;
+  display: inline-block;
+  position: absolute;
+}
+
+#cta .bl_section {
+  margin-right: 0;
+  margin-left: 0;
+  max-width: 100%;
+}
+
+#cta .bl_section .el_btn:first-child {
+  margin-right: 20px;
+}
+
 #flow .bl_section {
   position: relative;
 }
@@ -512,6 +648,12 @@ header .el_logo {
   position: absolute;
   top: 0;
   left: 0px;
+}
+
+#flow .bl_section_img {
+  border: 15px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #flow i {
@@ -563,6 +705,12 @@ header .el_logo {
           transform: translateX(-50%);
 }
 
+#mens.ly_section .bl_section_img {
+  border: 15px solid white;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #whitening {
   padding-left: 0vw;
   padding-right: 0vw;
@@ -582,6 +730,81 @@ header .el_logo {
   top: -40px;
   left: -20px;
   content: url(/img/jitsuwa.png);
+}
+
+.el_reason_head2 {
+  overflow-x: clip;
+  overflow-y: visible;
+  background-color: #35cec4;
+  color: #ffffff;
+  text-shadow: #707070;
+  -moz-text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.19);
+  -webkit-text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.19);
+  -ms-text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.19);
+  text-shadow: 4px 3px 0px rgba(0, 0, 0, 0.19);
+}
+
+.el_reason_head2 .el_reason_wrapper {
+  position: relative;
+  padding: 30px 4vw;
+  max-width: 700px;
+  line-height: 1.1;
+}
+
+.el_reason_head2 .el_reason_wrapper img {
+  width: 250px;
+  top: 80px;
+  position: absolute;
+  right: 0px;
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.el_reason_head2 .el_reason_wrapper::after, .el_reason_head2 .el_reason_wrapper::before {
+  border: solid transparent;
+  content: "";
+  height: 0;
+  width: 0;
+  pointer-events: none;
+  position: absolute;
+  top: 99%;
+  left: 50%;
+  -webkit-transform: translateX(-3%);
+          transform: translateX(-3%);
+}
+
+.el_reason_head2 .el_reason_wrapper::after {
+  border-top-width: 20px;
+  border-bottom-width: 20px;
+  border-left-width: 20px;
+  border-right-width: 20px;
+  margin-left: -20px;
+  border-top-color: #35cec4;
+}
+
+.el_reason_head2 .el_reason_wrapper::before {
+  border-color: rgba(0, 0, 0, 0);
+  border-top-width: 22px;
+  border-bottom-width: 22px;
+  border-left-width: 22px;
+  border-right-width: 22px;
+  margin-left: -22px;
+  margin-top: 1px;
+  border-top-color: #35cec4;
+  z-index: 1;
+}
+
+.el_reason_head2 p {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.el_reason_head2 p small {
+  font-size: 60%;
+}
+
+.el_reason_head2 p span {
+  font-size: 10rem;
 }
 
 #faq-p .bl_faq_list {
@@ -692,8 +915,13 @@ header .el_logo {
   transform: translate(-50%, -50%);
 }
 
+#access {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 #access .el_logo {
-  width: clamp(150px, 300px, 400px);
+  width: clamp(150px, 250px, 400px);
 }
 
 #access .bl_section {
@@ -748,6 +976,7 @@ footer {
 
 footer small {
   color: #ffffff;
+  font-size: 1rem;
 }
 
 footer .bl_production {
