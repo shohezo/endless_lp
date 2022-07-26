@@ -1,0 +1,586 @@
+@charset "UTF-8";
+html {
+  font-size: 62.5%;
+}
+
+/* color変数 */
+body {
+  color: #272534;
+  font-size: 2rem;
+  counter-reset: number 0;
+  line-height: 1.8;
+  letter-spacing: 0.05em;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: bottom;
+}
+
+/* ヘルパークラス */
+.hp_reverse {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.hp_br-pc {
+  display: block;
+}
+
+.hp_br-tb {
+  display: none;
+}
+
+.hp_br-sp {
+  display: none;
+}
+
+.hp_disb {
+  display: block;
+}
+
+.hp_fs-sm {
+  font-size: 80%;
+}
+
+.hp_mr10 {
+  margin-right: 10px;
+}
+
+.hp_ml10 {
+  margin-left: 10px;
+}
+
+.hp_mb10 {
+  margin-bottom: 10px;
+}
+
+.hp_mt10 {
+  margin-top: 10px;
+}
+
+.hp_mr30 {
+  margin-right: 30px;
+}
+
+.hp_ml30 {
+  margin-left: 30px;
+}
+
+.hp_mb30 {
+  margin-bottom: 30px;
+}
+
+.hp_mt30 {
+  margin-top: 30px;
+}
+
+.hp_mr50 {
+  margin-right: 50px;
+}
+
+.hp_ml50 {
+  margin-left: 50px;
+}
+
+.hp_mb50 {
+  margin-bottom: 50px;
+}
+
+.hp_mt50 {
+  margin-top: 50px;
+}
+
+.hp_mr80 {
+  margin-right: 80px;
+}
+
+.hp_ml80 {
+  margin-left: 80px;
+}
+
+.hp_mb80 {
+  margin-bottom: 80px;
+}
+
+.hp_mt80 {
+  margin-top: 80px;
+}
+
+.hp_mr100 {
+  margin-right: 100px;
+}
+
+.hp_ml100 {
+  margin-left: 100px;
+}
+
+.hp_mb100 {
+  margin-bottom: 100px;
+}
+
+.hp_mt100 {
+  margin-top: 100px;
+}
+
+.hp_mtLg {
+  margin-top: 120px;
+}
+
+.hp_mbLg {
+  margin-bottom: 120px;
+}
+
+.hp_mtMd {
+  margin-top: 80px;
+}
+
+.hp_mbMd {
+  margin-bottom: 80px;
+}
+
+.hp_mtSm {
+  margin-top: 30px;
+}
+
+.hp_mbSm {
+  margin-bottom: 30px;
+}
+
+/* padding  */
+.hp_pt30 {
+  padding-top: 30px;
+}
+
+.hp_pb30 {
+  padding-bottom: 30px;
+}
+
+.hp_pt50 {
+  padding-top: 50px;
+}
+
+.hp_pb50 {
+  padding-bottom: 50px;
+}
+
+.hp_pt80 {
+  padding-top: 80px;
+}
+
+.hp_pb80 {
+  padding-bottom: 80px;
+}
+
+.hp_pt120 {
+  padding-top: 120px;
+}
+
+.hp_pb120 {
+  padding-bottom: 120px;
+}
+
+.hp_ptLg {
+  padding-top: 120px;
+}
+
+.hp_pbLg {
+  padding-bottom: 120px;
+}
+
+.hp_mtLg {
+  margin-top: 120px;
+}
+
+.hp_mbLg {
+  margin-bottom: 120px;
+}
+
+.hp_ptMd {
+  padding-top: 80px;
+}
+
+.hp_pbMd {
+  padding-bottom: 80px;
+}
+
+.hp_ptSm {
+  padding-top: 30px;
+}
+
+.hp_pbSm {
+  padding-bottom: 30px;
+}
+
+.hp_MT10 {
+  margin-top: -10px !important;
+}
+
+.hp_MT20 {
+  margin-top: -20px !important;
+}
+
+.hp_MT50 {
+  margin-top: -50px !important;
+}
+
+.hp_MT1e {
+  margin-top: -1em !important;
+}
+
+.hp_sp-br {
+  display: none !important;
+}
+
+.hp_db {
+  display: block !important;
+}
+
+.hp_tac {
+  text-align: center !important;
+}
+
+.hp_tar {
+  text-align: right !important;
+}
+
+.hp_tal {
+  text-align: left !important;
+}
+
+.hp_w400 {
+  width: 400px !important;
+}
+
+.hp_w50p {
+  width: 50% !important;
+}
+
+.hp_lh1_5 {
+  line-height: 1.5 !important;
+}
+
+.hp_flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.hp_jcc {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hp_jcsb {
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+}
+
+.hp_jcsa {
+  -ms-flex-pack: distribute !important;
+      justify-content: space-around !important;
+}
+
+.hp_aic {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.hp_aife {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.hp_clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.hp_clear {
+  clear: both;
+}
+
+.hp_centering {
+  display: table !important;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hp_blackfilter::after {
+  /* 透過させた黒を重ねる （擬似要素で実装）*/
+  background-color: rgba(0, 0, 0, 0.5);
+  /* どの範囲に重ねるかを指定 */
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  content: " ";
+  z-index: 0;
+}
+
+.hp_marker {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #ff6));
+  background: linear-gradient(transparent 60%, #ff6 60%);
+}
+
+.hp_bgcBlue {
+  background-color: rgba(54, 206, 196, 0.185);
+}
+
+.hp_bgcRed {
+  background-color: rgba(255, 176, 231, 0.185);
+}
+
+.hp_bgi {
+  background-image: url(../img/organic-tiles.webp);
+}
+
+.hp_bgiGold {
+  background-image: url(../img/bg_gold.jpeg);
+}
+
+.hp_stripe {
+  background: -webkit-repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+  background: repeating-linear-gradient(-45deg, #f0f8ff, #f0f8ff 3px, #e9f4ff 3px, #e9f4ff 7px);
+}
+
+.hp_poRe {
+  position: relative !important;
+}
+
+.hp_red {
+  color: #ff6969 !important;
+  font-weight: 600;
+}
+
+/*--------------------------------
+SVG Shape Dividers Generator Tool
+--------------------------------*/
+/* ブルー、逆三角 */
+.shapedividers_com-8701 {
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+
+.shapedividers_com-8701::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  bottom: -1px;
+  left: -1px;
+  right: -1px;
+  top: -1px;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  background-size: 100% 85px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 1134.63 158.42"><g fill="%23dff6f4"><path d="M0 0h1134.63L565.17 111.32Z"/><path d="M0 0v51.38l565.17 107.04 569.46-115.6V0Z" opacity=".66"/></g></svg>');
+}
+
+@media (min-width: 768px) {
+  .shapedividers_com-8701::before {
+    background-size: 100% 85px;
+    background-position: 50% 0%;
+  }
+}
+
+@media (min-width: 1025px) {
+  .shapedividers_com-8701::before {
+    bottom: -0.1vw;
+    left: -0.1vw;
+    right: -0.1vw;
+    top: -0.1vw;
+    background-size: 100% 85px;
+    background-position: 50% 0%;
+  }
+}
+
+@media (min-width: 2100px) {
+  .shapedividers_com-8701::before {
+    background-size: 100% calc(2vw + 85px);
+  }
+}
+
+/* ホワイト、逆三角 */
+.shapedividers_com-1190 {
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+
+.shapedividers_com-1190::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 250% 171px;
+  background-position: 50% 100%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" viewBox="0 0 476.62 100.69"><path fill="%23dff6f4" d="M476.62 100.69V0l-238.3 95.47L0 0v100.69Z"/></svg>');
+}
+
+@media (min-width: 2100px) {
+  .shapedividers_com-1190::before {
+    background-size: 250% calc(2vw + 171px);
+  }
+}
+
+/* ブルー、平行線 */
+.shapedividers_com-1609 {
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+
+.shapedividers_com-1609::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 400% 118px;
+  background-position: 36% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 381 77.25" preserveAspectRatio="none"><g fill="%23dff6f4"><path d="M381 8.47L0 42.33V0h381z"/><path d="M381 33.87L0 59.27V0h381z" opacity=".33"/><path d="M381 59.27L0 77.25V0h381z" opacity=".33"/></g></svg>');
+}
+
+@media (min-width: 2100px) {
+  .shapedividers_com-1609::before {
+    background-size: 400% calc(2vw + 118px);
+  }
+}
+
+/* CTAセクション上部 */
+.shapedividers_com-7771 {
+  overflow: hidden;
+  position: relative;
+  height: 120px;
+}
+
+.shapedividers_com-7771::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 100% 99px;
+  background-position: 50% 100%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="xMidYMin slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 77"><g fill="%23fef0f9"><path opacity=".5" d="M1872 3v6l-6 3-5-3V3l5-3 6 3z"/><path opacity=".3" d="M1902 7v8l7 4 7-4V7l-7-4-7 4z"/><path opacity=".75" d="M1877 8v11l10 6 9-6V8l-9-5-10 5z"/><path opacity=".5" d="M1333 3v6l-5 3-6-3V3l6-3 5 3z"/><path opacity=".3" d="M1363 7v8l8 4 7-4V7l-7-4-8 4z"/><path opacity=".75" d="M1339 8v11l9 6 10-6V8l-10-5-9 5z"/><path opacity=".5" d="M786 3v6l-5 3-5-3V3l5-3 5 3z"/><path opacity=".3" d="M817 7v8l7 4 7-4V7l-7-4-7 4z"/><path opacity=".75" d="M792 8v11l10 6 9-6V8l-9-5-10 5z"/><path opacity=".5" d="M247 3v6l-5 3-5-3V3l5-3 5 3z"/><path opacity=".3" d="M278 7v8l7 4 7-4V7l-7-4-7 4z"/><path opacity=".75" d="M253 8v11l9 6 10-6V8l-10-5-9 5z"/><path opacity=".5" d="M13 38v23l19 11 19-11V38L32 27 13 38z"/><path opacity=".3" d="M71 10v15l13 7 12-7V10L84 3l-13 7zM0 32v11l10 6 9-6V32l-9-5-10 5z"/><path opacity=".5" d="M15 14v9l8 4 7-4v-9l-7-4-8 4z"/><path opacity=".75" d="M37 22v16l14 8 14-8V22l-14-8-14 8zM208 5v9l8 5 8-5V5l-8-4-8 4z"/><path opacity=".5" d="M59 37v14l12 7 11-7V37l-11-6-12 6zM112 31v22l19 11 19-11V31l-19-11-19 11z"/><path opacity=".3" d="M170 8v11l9 6 10-6V8l-10-5-9 5zM99 25v11l10 6 9-6V25l-9-5-10 5z"/><path opacity=".5" d="M114 7v8l8 5 7-5V7l-7-4-8 4zM193 13v6l6 3 5-3v-6l-5-3-6 3z"/><path opacity=".75" d="M136 15v16l14 8 14-8V15l-14-9-14 9z"/><path opacity=".5" d="M158 30v14l12 6 11-6V30l-11-7-12 7zM516 38v22l-20 11-19-11V38l19-11 20 11z"/><path opacity=".3" d="M458 10v15l-13 7-13-7V10l13-8 13 8zM528 32v11l-9 6-10-6V32l10-5 9 5z"/><path opacity=".5" d="M511 17v7l-5 3-6-3v-7l6-3 5 3z"/><path opacity=".75" d="M491 22v16l-14 8-14-8V22l14-9 14 9zM320 5v9l-8 4-7-4V5l8-5 7 5z"/><path opacity=".5" d="M470 37v14l-12 6-12-7V37l12-7 12 7zM417 31v22l-20 11-19-11V31l19-11 20 11z"/><path opacity=".3" d="M359 8v11l-10 5-9-5V8l9-6 10 6zM429 25v11l-9 5-10-5V25l10-6 9 6z"/><path opacity=".5" d="M414 7v8l-7 4-8-4V7l8-5 7 5zM335 12v7l-5 3-5-3v-7l5-3 5 3z"/><path opacity=".75" d="M392 14v16l-14 9-14-9V14l14-8 14 8z"/><path opacity=".5" d="M371 30v13l-12 7-12-7V30l12-7 12 7zM552 38v23l19 11 19-11V38l-19-11-19 11z"/><path opacity=".3" d="M609 10v15l13 7 13-7V10l-13-7-13 7zM539 32v11l9 6 10-6V32l-10-5-9 5z"/><path opacity=".5" d="M554 14v9l8 4 7-4v-9l-7-4-8 4z"/><path opacity=".75" d="M576 22v16l14 8 14-8V22l-14-8-14 8zM747 5v9l8 5 8-5V5l-8-4-8 4z"/><path opacity=".5" d="M598 37v14l11 7 12-7V37l-12-6-11 6zM651 31v22l19 11 19-11V31l-19-11-19 11z"/><path opacity=".3" d="M708 8v11l10 6 10-6V8l-10-5-10 5zM638 25v11l9 6 10-6V25l-10-5-9 5z"/><path opacity=".5" d="M653 7v8l8 5 7-5V7l-7-4-8 4zM732 13v6l5 3 6-3v-6l-6-3-5 3z"/><path opacity=".75" d="M675 15v16l14 8 14-8V15l-14-9-14 9z"/><path opacity=".5" d="M697 30v14l11 6 12-6V30l-12-7-11 7zM1054 38v22l-19 11-19-11V38l19-11 19 11z"/><path opacity=".3" d="M997 10v15l-13 7-13-7V10l13-8 13 8zM1067 32v11l-9 6-10-6V32l10-5 9 5z"/><path opacity=".5" d="M1050 17v7l-6 3-5-3v-7l5-3 6 3z"/><path opacity=".75" d="M1030 22v16l-14 8-14-8V22l14-9 14 9zM859 5v9l-8 4-8-4V5l8-5 8 5z"/><path opacity=".5" d="M1008 37v14l-11 6-12-7V37l12-7 11 7zM955 31v22l-19 11-19-11V31l19-11 19 11z"/><path opacity=".3" d="M898 8v11l-10 5-10-5V8l10-6 10 6zM968 25v11l-9 5-10-5V25l10-6 9 6z"/><path opacity=".5" d="M953 7v8l-8 4-7-4V7l7-5 8 5zM874 12v7l-5 3-6-3v-7l6-3 5 3z"/><path opacity=".75" d="M931 14v16l-14 9-14-9V14l14-8 14 8z"/><path opacity=".5" d="M909 30v13l-11 7-12-7V30l12-7 11 7zM1090 38v23l20 11 19-11V38l-19-11-20 11z"/><path opacity=".3" d="M1148 10v15l13 7 13-7V10l-13-7-13 7zM1078 32v11l9 6 10-6V32l-10-5-9 5z"/><path opacity=".5" d="M1093 14v9l7 4 8-4v-9l-8-4-7 4z"/><path opacity=".75" d="M1115 22v16l14 8 14-8V22l-14-8-14 8zM1286 5v9l8 5 7-5V5l-7-4-8 4z"/><path opacity=".5" d="M1136 37v14l12 7 12-7V37l-12-6-12 6zM1189 31v22l20 11 19-11V31l-19-11-20 11z"/><path opacity=".3" d="M1247 8v11l10 6 9-6V8l-9-5-10 5zM1177 25v11l9 6 10-6V25l-10-5-9 5z"/><path opacity=".5" d="M1192 7v8l7 5 8-5V7l-8-4-7 4zM1271 13v6l5 3 5-3v-6l-5-3-5 3z"/><path opacity=".75" d="M1214 15v16l14 8 14-8V15l-14-9-14 9z"/><path opacity=".5" d="M1235 30v14l12 6 12-6V30l-12-7-12 7zM1593 38v22l-19 11-19-11V38l19-11 19 11z"/><path opacity=".3" d="M1535 10v15l-13 7-12-7V10l13-8 12 8zM1606 32v11l-10 6-9-6V32l9-5 10 5z"/><path opacity=".5" d="M1589 17v7l-6 3-5-3v-7l5-3 6 3z"/><path opacity=".75" d="M1569 22v16l-14 8-14-8V22l14-9 14 9zM1398 5v9l-8 4-8-4V5l8-5 8 5z"/><path opacity=".5" d="M1547 37v14l-12 6-11-7V37l11-7 12 7zM1494 31v22l-19 11-19-11V31l19-11 19 11z"/><path opacity=".3" d="M1436 8v11l-9 5-10-5V8l10-6 9 6zM1507 25v11l-10 5-9-5V25l10-6 9 6z"/><path opacity=".5" d="M1492 7v8l-8 4-7-4V7l7-5 8 5zM1413 12v7l-6 3-5-3v-7l6-3 5 3z"/><path opacity=".75" d="M1470 14v16l-14 9-14-9V14l14-8 14 8z"/><path opacity=".5" d="M1448 30v13l-12 7-11-7V30l11-7 12 7zM1629 38v23l19 11 20-11V38l-20-11-19 11z"/><path opacity=".3" d="M1687 10v15l13 7 13-7V10l-13-7-13 7zM1616 32v11l10 6 9-6V32l-9-5-10 5z"/><path opacity=".5" d="M1632 14v9l7 4 8-4v-9l-8-4-7 4z"/><path opacity=".75" d="M1653 22v16l15 8 14-8V22l-14-8-15 8zM1824 5v9l8 5 8-5V5l-8-4-8 4z"/><path opacity=".5" d="M1675 37v14l12 7 12-7V37l-12-6-12 6zM1728 31v22l19 11 20-11V31l-20-11-19 11z"/><path opacity=".3" d="M1786 8v11l9 6 10-6V8l-10-5-9 5zM1715 25v11l10 6 9-6V25l-9-5-10 5z"/><path opacity=".5" d="M1731 7v8l7 5 8-5V7l-8-4-7 4zM1809 13v6l6 3 5-3v-6l-5-3-6 3z"/><path opacity=".75" d="M1752 15v16l15 8 14-8V15l-14-9-15 9z"/><path opacity=".5" d="M1774 30v14l12 6 12-6V30l-12-7-12 7z"/><path opacity=".75" d="M1937 5v9l-8 4-8-4V5l8-5 8 5z"/><path opacity=".3" d="M1975 8v11l-9 5-10-5V8l10-6 9 6z"/><path opacity=".5" d="M1952 12v7l-6 3-5-3v-7l5-3 6 3z"/><path opacity=".75" d="M2000 35V9l-5-3-15 8v16l7 4 8 5 5-4z"/><path opacity=".5" d="M1987 30v13l-12 7-12-7V30l12-7 12 7z"/><path d="M2000 77V39l-115-22-4-1-26-5-17 3-5 1-243 47-230-44-3-1-32-6-11 2-6 1-248 48-225-43h-2l-38-8-5 1-6 1-254 49-219-42h-1l-44-9h-1l-6 1-44 9L0 62v15h2000z"/></g></svg>');
+}
+
+@media (min-width: 2100px) {
+  .shapedividers_com-7771::before {
+    background-size: 100% calc(2vw + 99px);
+  }
+}
+
+/* CTAセクション下部 */
+.shapedividers_com-2998 {
+  overflow: hidden;
+  position: relative;
+  height: 120px;
+}
+
+.shapedividers_com-2998::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 100% 110px;
+  background-position: 50% 0%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg preserveAspectRatio="xMidYMax slice" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2000 77"><g fill="%23fef0f9"><path opacity=".5" d="M1872 74v-6l-6-3-5 3v6l5 3 6-3z"/><path opacity=".3" d="M1902 70v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".75" d="M1877 69V58l10-6 9 6v11l-9 5-10-5z"/><path opacity=".5" d="M1333 74v-6l-5-3-6 3v6l6 3 5-3z"/><path opacity=".3" d="M1363 70v-8l8-4 7 4v8l-7 4-8-4z"/><path opacity=".75" d="M1339 69V58l9-6 10 6v11l-10 5-9-5z"/><path opacity=".5" d="M786 74v-6l-5-3-5 3v6l5 3 5-3z"/><path opacity=".3" d="M817 70v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".75" d="M792 69V58l10-6 9 6v11l-9 5-10-5z"/><path opacity=".5" d="M247 74v-6l-5-3-5 3v6l5 3 5-3z"/><path opacity=".3" d="M278 70v-8l7-4 7 4v8l-7 4-7-4z"/><path opacity=".75" d="M253 69V58l9-6 10 6v11l-10 5-9-5z"/><path opacity=".5" d="M13 38V16L32 5l19 11v22L32 50 13 38z"/><path opacity=".3" d="M71 67V52l13-8 12 8v15l-12 7-13-7zM0 45V34l10-6 9 6v11l-9 5-10-5z"/><path opacity=".5" d="M15 63v-9l8-4 7 4v9l-7 4-8-4z"/><path opacity=".75" d="M37 55V39l14-8 14 8v16l-14 8-14-8zM208 72v-9l8-5 8 5v9l-8 4-8-4z"/><path opacity=".5" d="M59 40V26l12-7 11 7v14l-11 6-12-6zM112 46V24l19-12 19 12v22l-19 11-19-11z"/><path opacity=".3" d="M170 69V58l9-6 10 6v11l-10 5-9-5zM99 52V41l10-6 9 6v11l-9 5-10-5z"/><path opacity=".5" d="M114 70v-9l8-4 7 4v9l-7 4-8-4zM193 64v-6l6-3 5 3v6l-5 3-6-3z"/><path opacity=".75" d="M136 62V46l14-8 14 8v16l-14 8-14-8z"/><path opacity=".5" d="M158 47V33l12-6 11 6v14l-11 7-12-7zM516 39V17L496 5l-19 12v22l19 11 20-11z"/><path opacity=".3" d="M458 67V52l-13-7-13 7v15l13 8 13-8zM528 45V34l-9-6-10 6v11l10 5 9-5z"/><path opacity=".5" d="M511 60v-7l-5-3-6 3v7l6 3 5-3z"/><path opacity=".75" d="M491 55V39l-14-8-14 8v16l14 9 14-9zM320 72v-9l-8-4-7 4v9l8 5 7-5z"/><path opacity=".5" d="M470 40V26l-12-6-12 6v14l12 7 12-7zM417 46V24l-20-11-19 11v22l19 11 20-11z"/><path opacity=".3" d="M359 69V58l-10-5-9 5v11l9 6 10-6zM429 52V41l-9-5-10 5v11l10 6 9-6z"/><path opacity=".5" d="M414 70v-8l-7-4-8 4v8l8 5 7-5zM335 64v-6l-5-3-5 3v6l5 4 5-4z"/><path opacity=".75" d="M392 63V46l-14-8-14 9v16l14 8 14-8z"/><path opacity=".5" d="M371 47V34l-12-7-12 7v13l12 7 12-7zM552 38V16l19-11 19 11v22l-19 12-19-12z"/><path opacity=".3" d="M609 67V52l13-8 13 8v15l-13 7-13-7zM539 45V34l9-6 10 6v11l-10 5-9-5z"/><path opacity=".5" d="M554 63v-9l8-4 7 4v9l-7 4-8-4z"/><path opacity=".75" d="M576 55V39l14-8 14 8v16l-14 8-14-8zM747 72v-9l8-5 8 5v9l-8 4-8-4z"/><path opacity=".5" d="M598 40V26l11-7 12 7v14l-12 6-11-6zM651 46V24l19-12 19 12v22l-19 11-19-11z"/><path opacity=".3" d="M708 69V58l10-6 10 6v11l-10 5-10-5zM638 52V41l9-6 10 6v11l-10 5-9-5z"/><path opacity=".5" d="M653 70v-9l8-4 7 4v9l-7 4-8-4zM732 64v-6l5-3 6 3v6l-6 3-5-3z"/><path opacity=".75" d="M675 62V46l14-8 14 8v16l-14 8-14-8z"/><path opacity=".5" d="M697 47V33l11-6 12 6v14l-12 7-11-7zM1054 39V17l-19-12-19 12v22l19 11 19-11z"/><path opacity=".3" d="M997 67V52l-13-7-13 7v15l13 8 13-8zM1067 45V34l-9-6-10 6v11l10 5 9-5z"/><path opacity=".5" d="M1050 60v-7l-6-3-5 3v7l5 3 6-3z"/><path opacity=".75" d="M1030 55V39l-14-8-14 8v16l14 9 14-9zM859 72v-9l-8-4-8 4v9l8 5 8-5z"/><path opacity=".5" d="M1008 40V26l-11-6-12 6v14l12 7 11-7zM955 46V24l-19-11-19 11v22l19 11 19-11z"/><path opacity=".3" d="M898 69V58l-10-5-10 5v11l10 6 10-6zM968 52V41l-9-5-10 5v11l10 6 9-6z"/><path opacity=".5" d="M953 70v-8l-8-4-7 4v8l7 5 8-5zM874 64v-6l-5-3-6 3v6l6 4 5-4z"/><path opacity=".75" d="M931 63V46l-14-8-14 9v16l14 8 14-8z"/><path opacity=".5" d="M909 47V34l-11-7-12 7v13l12 7 11-7zM1090 38V16l20-11 19 11v22l-19 12-20-12z"/><path opacity=".3" d="M1148 67V52l13-8 13 8v15l-13 7-13-7zM1078 45V34l9-6 10 6v11l-10 5-9-5z"/><path opacity=".5" d="M1093 63v-9l7-4 8 4v9l-8 4-7-4z"/><path opacity=".75" d="M1115 55V39l14-8 14 8v16l-14 8-14-8zM1286 72v-9l8-5 7 5v9l-7 4-8-4z"/><path opacity=".5" d="M1136 40V26l12-7 12 7v14l-12 6-12-6zM1189 46V24l20-12 19 12v22l-19 11-20-11z"/><path opacity=".3" d="M1247 69V58l10-6 9 6v11l-9 5-10-5zM1177 52V41l9-6 10 6v11l-10 5-9-5z"/><path opacity=".5" d="M1192 70v-9l7-4 8 4v9l-8 4-7-4zM1271 64v-6l5-3 5 3v6l-5 3-5-3z"/><path opacity=".75" d="M1214 62V46l14-8 14 8v16l-14 8-14-8z"/><path opacity=".5" d="M1235 47V33l12-6 12 6v14l-12 7-12-7zM1593 39V17l-19-12-19 12v22l19 11 19-11z"/><path opacity=".3" d="M1535 67V52l-13-7-12 7v15l13 8 12-8zM1606 45V34l-10-6-9 6v11l9 5 10-5z"/><path opacity=".5" d="M1589 60v-7l-6-3-5 3v7l5 3 6-3z"/><path opacity=".75" d="M1569 55V39l-14-8-14 8v16l14 9 14-9zM1398 72v-9l-8-4-8 4v9l8 5 8-5z"/><path opacity=".5" d="M1547 40V26l-12-6-11 6v14l11 7 12-7zM1494 46V24l-19-11-19 11v22l19 11 19-11z"/><path opacity=".3" d="M1436 69V58l-9-5-10 5v11l10 6 9-6zM1507 52V41l-10-5-9 5v11l10 6 9-6z"/><path opacity=".5" d="M1492 70v-8l-8-4-7 4v8l7 5 8-5zM1413 64v-6l-6-3-5 3v6l6 4 5-4z"/><path opacity=".75" d="M1470 63V46l-14-8-14 9v16l14 8 14-8z"/><path opacity=".5" d="M1448 47V34l-12-7-11 7v13l11 7 12-7zM1629 38V16l19-11 20 11v22l-20 12-19-12z"/><path opacity=".3" d="M1687 67V52l13-8 13 8v15l-13 7-13-7zM1616 45V34l10-6 9 6v11l-9 5-10-5z"/><path opacity=".5" d="M1632 63v-9l7-4 8 4v9l-8 4-7-4z"/><path opacity=".75" d="M1653 55V39l15-8 14 8v16l-14 8-15-8zM1824 72v-9l8-5 8 5v9l-8 4-8-4z"/><path opacity=".5" d="M1675 40V26l12-7 12 7v14l-12 6-12-6zM1728 46V24l19-12 20 12v22l-20 11-19-11z"/><path opacity=".3" d="M1786 69V58l9-6 10 6v11l-10 5-9-5zM1715 52V41l10-6 9 6v11l-9 5-10-5z"/><path opacity=".5" d="M1731 70v-9l7-4 8 4v9l-8 4-7-4zM1809 64v-6l6-3 5 3v6l-5 3-6-3z"/><path opacity=".75" d="M1752 62V46l15-8 14 8v16l-14 8-15-8z"/><path opacity=".5" d="M1774 47V33l12-6 12 6v14l-12 7-12-7z"/><path opacity=".75" d="M1937 72v-9l-8-4-8 4v9l8 5 8-5z"/><path opacity=".3" d="M1975 69V58l-9-5-10 5v11l10 6 9-6z"/><path opacity=".5" d="M1952 64v-6l-6-3-5 3v6l5 4 6-4z"/><path opacity=".75" d="M2000 42v26l-5 3-15-8V47l7-4 8-5 5 4z"/><path opacity=".5" d="M1987 47V34l-12-7-12 7v13l12 7 12-7z"/><path d="M2000 0v38l-115 22-4 1-26 5-17-4h-5l-243-47-230 44-3 1-32 6-11-2-6-1-248-48-225 43h-2l-38 8-5-1-6-1-254-49-219 42h-1l-44 8-1 1-6-1-44-9L0 15V0h2000z"/></g></svg>');
+}
+
+@media (min-width: 2100px) {
+  .shapedividers_com-2998::before {
+    background-size: 100% calc(2vw + 110px);
+  }
+}
+
+/* ブルー、斜め */
+.shapedividers_com-1302 {
+  overflow: hidden;
+  position: relative;
+  height: 100px;
+}
+
+.shapedividers_com-1302::before {
+  content: "";
+  font-family: "shape divider from ShapeDividers.com";
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+  background-repeat: no-repeat;
+  bottom: -0.1vw;
+  left: -0.1vw;
+  right: -0.1vw;
+  top: -0.1vw;
+  background-size: 100% 200px;
+  background-position: 50% 100%;
+  background-image: url('data:image/svg+xml;charset=utf8, <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 381 77.25" preserveAspectRatio="none"><g fill="%23dff6f4"><path d="M0 68.78l381-33.86v42.33H0z"/><path d="M0 43.38l381-25.4v59.27H0z" opacity=".33"/><path d="M0 17.98L381 0v77.25H0z" opacity=".33"/></g></svg>');
+}
+
+@media (min-width: 2100px) {
+  .shapedividers_com-1302::before {
+    background-size: 100% calc(2vw + 200px);
+  }
+}
+
+/* スクロールするとアンダーラインがのびる */
+.Text-Span {
+  position: relative;
+  z-index: 1;
+}
+
+.Text-Span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0px;
+  width: 0%;
+  height: 24px;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, transparent), color-stop(60%, #ff6));
+  background: linear-gradient(transparent 60%, #ff6 60%);
+  z-index: -1;
+  -webkit-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+.Text-Span.isActive:after {
+  width: 100%;
+}
+/*# sourceMappingURL=common.css.map */

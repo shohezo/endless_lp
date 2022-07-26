@@ -1,0 +1,398 @@
+@charset "UTF-8";
+@media screen and (min-width: 1180px) {
+  /* ヘルパークラス */
+  .hp_pc-br {
+    display: none;
+  }
+}
+
+/*--------------------------------
+タブレット
+--------------------------------*/
+@media screen and (max-width: 959px) {
+  .ly_fv {
+    background-position-x: 53%;
+    background-size: cover;
+  }
+  .ly_fv .el_fv_maincopy {
+    top: 10%;
+  }
+  .ly_fv .el_sailprice {
+    top: 25%;
+  }
+  .ly_fv .el_campaign {
+    top: 50%;
+  }
+  .ly_fv .el_fv_message {
+    top: 80%;
+  }
+  #reason08 .bl_section {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  #reason08 .bl_section_imgWrapper > img {
+    width: 120px;
+  }
+  #reason08 .bl_section_card {
+    width: 40%;
+  }
+  #reason08 .bl_section_card:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  #reason08 .bl_section_card:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  /* ヘルパークラス */
+  .hp_br-tb {
+    display: block;
+  }
+  .hp_br-pc {
+    display: none;
+  }
+  .hp_column_tb {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .hp_column_tb-reverse {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .hp_mtLg {
+    margin-top: 80px;
+  }
+  .hp_mbLg {
+    margin-bottom: 80px;
+  }
+  .hp_mtMd {
+    margin-top: 50px;
+  }
+  .hp_mbMd {
+    margin-bottom: 50px;
+  }
+  .hp_mtSm {
+    margin-top: 20px;
+  }
+  .hp_mbSm {
+    margin-bottom: 20px;
+  }
+  .hp_ptLg {
+    padding-top: 80px;
+  }
+  .hp_pbLg {
+    padding-bottom: 80px;
+  }
+  .hp_ptMd {
+    padding-top: 50px;
+  }
+  .hp_pbMd {
+    padding-bottom: 50px;
+  }
+  .hp_ptSm {
+    padding-top: 20px;
+  }
+  .hp_pbSm {
+    padding-bottom: 20px;
+  }
+}
+
+/*--------------------------------
+タブレット(小)
+--------------------------------*/
+@media screen and (max-width: 768px) {
+  header .el_btn {
+    width: 70px;
+    padding: 5px 10px;
+  }
+  header .el_btn__line p {
+    font-size: 0rem;
+  }
+  header .el_btn__line p:before {
+    font-size: 1rem;
+    content: "LINE登録";
+  }
+  header .el_btn__line img {
+    margin-right: 0.3em;
+  }
+  header .el_btn__tel {
+    margin-right: 0.5rem;
+  }
+  header .el_btn__tel .el_tel_num {
+    font-size: 0px;
+  }
+  header .el_btn__tel .el_tel_num:before {
+    font-size: 1rem;
+    content: " 電話予約";
+    margin-right: -0.7rem;
+  }
+  header .el_btn__tel i {
+    font-size: 1rem;
+    margin-right: 0.3em;
+  }
+  #reason08 .bl_section {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #reason08 .bl_section_card {
+    width: 80%;
+  }
+  #reason08 .bl_section_card:nth-child(1) {
+    margin-bottom: 30px;
+  }
+  #reason08 .bl_section_card:nth-child(2) {
+    margin-bottom: 30px;
+  }
+  #reason08 .bl_section_card:nth-child(3) {
+    margin-bottom: 30px;
+  }
+  #mens.ly_section::before {
+    visibility: visible;
+  }
+  #mens.ly_section::after {
+    visibility: visible;
+  }
+  #faq-p .bl_faq_item_question {
+    padding-left: 20px;
+    padding-right: 0;
+  }
+  #faq-p .bl_faq_item_question div i {
+    font-size: 3rem;
+  }
+  #faq-p #question .bl_faq_container .bl_faq_list:first-child::after {
+    width: 150px;
+    height: 150px;
+    top: -90.5px;
+    right: -71px;
+  }
+  #faq-p .bl_faq_container {
+    position: relative;
+  }
+  #faq-p .bl_faq_item_answer {
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+}
+
+/*--------------------------------
+スマホ
+--------------------------------*/
+@media screen and (max-width: 519px) {
+  body {
+    font-size: 1.6rem;
+  }
+  .bl_section_ttl {
+    font-size: 2.5rem;
+  }
+  .el_section_ttl {
+    font-size: 3rem;
+  }
+  .el_btn {
+    width: 150px;
+    padding: 7px 15px;
+  }
+  .el_btn.el_btn__line {
+    line-height: 1.2;
+    font-weight: bold;
+    font-size: 1.6rem;
+    letter-spacing: 0rem;
+  }
+  .el_btn.el_btn__line img {
+    width: 20px;
+  }
+  .el_btn.el_btn__tel {
+    line-height: 2.2;
+    font-weight: bold;
+    font-size: 1.6rem;
+  }
+  .el_btn.el_btn__tel img {
+    width: 30px;
+    margin-right: 1rem;
+  }
+  .el_btn.el_btn__tel .fa-phone {
+    margin-right: 0.2em;
+  }
+  .el_pageTop img {
+    width: 70px;
+    right: 1rem;
+  }
+  .el_campaign_sp {
+    display: block;
+  }
+  .el_campaign {
+    display: none;
+  }
+  /* ファーストビュー */
+  .ly_fv .el_fv_maincopy {
+    top: 12%;
+    width: 85%;
+    -webkit-transform: rotate(349deg);
+            transform: rotate(349deg);
+    left: 3%;
+  }
+  .ly_fv .el_sailprice {
+    top: 20%;
+    width: 80%;
+    left: 3%;
+  }
+  .ly_fv .el_campaign {
+    top: 60%;
+    width: 100%;
+    left: unset;
+  }
+  .ly_fv .el_fv_message {
+    display: none;
+  }
+  header .el_logo {
+    width: 130px;
+    margin-top: -1rem;
+  }
+  /* イントロセクション */
+  #intro .bl_section_wrapper {
+    gap: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  #intro .bl_section_wrapper .bl_section_balloon {
+    width: 127px;
+  }
+  #intro .bl_section_ttl::after {
+    top: -60px;
+    right: -10px;
+  }
+  #intro .bl_section_ttl::before {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    left: -260px;
+  }
+  .el_reason_head .el_reason_wrapper {
+    margin-left: 10vw;
+  }
+  .el_reason_head .el_reason_wrapper img {
+    top: 40px;
+    right: -110px;
+  }
+  #reason02 .bl_section_img {
+    margin-top: -50px;
+  }
+  #reason04 .el_section_ttl::after {
+    left: -20px;
+  }
+  #reason05 .el_section_ttl::after {
+    left: 110px;
+  }
+  #reason08 .bl_section {
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  #reason08 .bl_section_body {
+    text-align: center;
+  }
+  #reason08 .bl_section_txt {
+    width: 80%;
+    margin: 0 auto;
+  }
+  #reason08 .bl_section_txt.balloon-top {
+    margin-top: 30px;
+  }
+  #reason08 .bl_section_card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  #reason08 .bl_section_imgWrapper > img {
+    width: 120px;
+  }
+  #parts .el_section_ttl::before {
+    -webkit-transform: scale(0.2);
+            transform: scale(0.2);
+    left: -390px;
+    top: -290px;
+  }
+  #cta .bl_section {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  #cta .bl_section .el_btn:first-child {
+    margin-right: 0px;
+    margin-bottom: 20px;
+  }
+  #flow .bl_section {
+    position: relative;
+  }
+  #flow .bl_section_header {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  #flow .bl_section_header img {
+    position: absolute;
+    width: 110px;
+    top: 40px;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  /* ヘルパークラス */
+  .hp_br-sp {
+    display: block;
+  }
+  .hp_column_sp {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .hp_column_sp-reverse {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: reverse !important;
+        -ms-flex-direction: column-reverse !important;
+            flex-direction: column-reverse !important;
+  }
+  .hp_mtLg {
+    margin-top: 60px;
+  }
+  .hp_mbLg {
+    margin-bottom: 60px;
+  }
+  .hp_mtMd {
+    margin-top: 40px;
+  }
+  .hp_mbMd {
+    margin-bottom: 40px;
+  }
+  .hp_mtSm {
+    margin-top: 15px;
+  }
+  .hp_mbSm {
+    margin-bottom: 15px;
+  }
+  .hp_ptLg {
+    padding-top: 60px;
+  }
+  .hp_pbLg {
+    padding-bottom: 60px;
+  }
+  .hp_ptMd {
+    padding-top: 40px;
+  }
+  .hp_pbMd {
+    padding-bottom: 40px;
+  }
+  .hp_ptSm {
+    padding-top: 15px;
+  }
+  .hp_pbSm {
+    padding-bottom: 15px;
+  }
+  .hp_tac-sp {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=responsive.css.map */
