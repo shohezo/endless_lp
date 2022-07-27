@@ -11,20 +11,18 @@
 --------------------------------*/
 @media screen and (max-width: 959px) {
   .ly_fv {
-    background-position-x: 53%;
+    background-position-x: 70%;
     background-size: cover;
   }
   .ly_fv .el_fv_maincopy {
-    top: 10%;
-  }
-  .ly_fv .el_sailprice {
-    top: 25%;
+    top: 12%;
   }
   .ly_fv .el_campaign {
     top: 50%;
   }
   .ly_fv .el_fv_message {
-    top: 80%;
+    top: 50%;
+    right: 10%;
   }
   #reason08 .bl_section {
     -webkit-box-pack: center;
@@ -227,6 +225,10 @@
     display: none;
   }
   /* ファーストビュー */
+  .ly_fv {
+    height: 85vh;
+    background-image: url(../img/endless_lp-fv-sp.png);
+  }
   .ly_fv .el_fv_maincopy {
     top: 12%;
     width: 85%;
@@ -234,18 +236,21 @@
             transform: rotate(349deg);
     left: 3%;
   }
-  .ly_fv .el_sailprice {
-    top: 20%;
-    width: 80%;
-    left: 3%;
+  .ly_fv .el_fv_banner {
+    display: none;
   }
-  .ly_fv .el_campaign {
-    top: 60%;
+  .ly_fv .el_fv_banner-sp {
+    display: block;
+    position: absolute;
+    bottom: 30px;
     width: 100%;
-    left: unset;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
   .ly_fv .el_fv_message {
-    display: none;
+    top: 50%;
+    width: 50px;
   }
   header .el_logo {
     width: 130px;

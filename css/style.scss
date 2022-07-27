@@ -200,7 +200,7 @@ header.HeightMin {
 ファーストビュー
 --------------------------------*/
 .ly_fv {
-  background-image: url(../img/fv.jpeg);
+  background-image: url(../img/endless_lp-fv.png);
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
@@ -221,30 +221,27 @@ header.HeightMin {
   }
   .el_fv_maincopy {
     overflow: hidden;
-
     position: absolute;
-    top: 10%;
+    top: 14%;
     left: 8%;
-    width: clamp(400px, 71%, 800px);
+    width: clamp(300px, 50%, 800px);
   }
-  .el_sailprice {
+  .el_fv_banner {
+    display: block;
     position: absolute;
-    top: 26%;
-    left: 8%;
-    width: clamp(300px, 61%, 500px);
+    bottom: 0%;
+    width: clamp(300px, 90%, 900px);
+    left: 50%;
+    transform: translateX(-50%);
   }
-  .el_campaign {
-    display: block !important;
-    position: absolute;
-    top: 55%;
-    left: 8%;
-    width: clamp(300px, 70%, 500px);
+  .el_fv_banner-sp {
+    display: none;
   }
   .el_fv_message {
     position: absolute;
     top: 30%;
-    right: 8%;
-    width: clamp(200px, 50%, 400px);
+    right: 3%;
+    width: 100px;
   }
 }
 /*--------------------------------
