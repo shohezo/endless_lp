@@ -81,6 +81,7 @@ $primary: #35cec4;
   font-size: 2rem;
   img {
     width: 30px;
+    margin-right: 0.3em;
   }
 }
 .el_btn.el_btn__tel {
@@ -251,7 +252,7 @@ header.HeightMin {
   background-color: rgba(54, 206, 196, 0.185);
   overflow: hidden;
   .box25 {
-    padding: 3rem 0.5em;
+    padding: 1rem 0.5em 2rem 0.5rem;
     margin: 2em 0;
     color: #565656;
     background: $white;
@@ -286,21 +287,21 @@ header.HeightMin {
   }
   .deco {
     position: relative;
-    &::after {
-      content: url(../img/stars-left.png);
+    &::before {
+      content: url(../img/stars.png);
       z-index: -1;
-      transform: scale(0.2);
-      top: -250px;
-      left: -310px;
+      transform: scale(0.5);
+      top: -20px;
+      left: -100px;
       display: inline-block;
       position: absolute;
     }
-    &::before {
-      content: url(../img/stars-right.png);
+    &::after {
+      content: url(../img/stars.png);
       z-index: -1;
-      transform: scale(0.2);
-      top: -210px;
-      right: -330px;
+      transform: scale(0.5);
+      top: -80px;
+      right: -90px;
       display: inline-block;
       position: absolute;
     }
@@ -605,6 +606,12 @@ header.HeightMin {
     &_img {
       border: 15px solid rgba(255, 255, 255, 1);
       box-sizing: border-box;
+    }
+    .complete {
+      color: #000;
+      -webkit-text-stroke: 0.5px #fff;
+      text-stroke: 0.5px #fff;
+      font-weight: 900;
     }
   }
   i {

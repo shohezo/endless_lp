@@ -75,6 +75,7 @@ h2 {
 
 .el_btn.el_btn__line img {
   width: 30px;
+  margin-right: 0.3em;
 }
 
 .el_btn.el_btn__tel {
@@ -284,7 +285,7 @@ header.HeightMin .el_btn {
 }
 
 #intro .box25 {
-  padding: 3rem 0.5em;
+  padding: 1rem 0.5em 2rem 0.5rem;
   margin: 2em 0;
   color: #565656;
   background: #ffffff;
@@ -323,24 +324,24 @@ header.HeightMin .el_btn {
   position: relative;
 }
 
-#intro .deco::after {
-  content: url(../img/stars-left.png);
+#intro .deco::before {
+  content: url(../img/stars.png);
   z-index: -1;
-  -webkit-transform: scale(0.2);
-          transform: scale(0.2);
-  top: -250px;
-  left: -310px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  top: -20px;
+  left: -100px;
   display: inline-block;
   position: absolute;
 }
 
-#intro .deco::before {
-  content: url(../img/stars-right.png);
+#intro .deco::after {
+  content: url(../img/stars.png);
   z-index: -1;
-  -webkit-transform: scale(0.2);
-          transform: scale(0.2);
-  top: -210px;
-  right: -330px;
+  -webkit-transform: scale(0.5);
+          transform: scale(0.5);
+  top: -80px;
+  right: -90px;
   display: inline-block;
   position: absolute;
 }
@@ -702,6 +703,13 @@ header.HeightMin .el_btn {
   border: 15px solid white;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#flow .bl_section .complete {
+  color: #000;
+  -webkit-text-stroke: 0.5px #fff;
+  text-stroke: 0.5px #fff;
+  font-weight: 900;
 }
 
 #flow i {

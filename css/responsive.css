@@ -226,7 +226,6 @@
   }
   /* ファーストビュー */
   .ly_fv {
-    height: 85vh;
     background-image: url(../img/endless_lp-fv-sp.png);
   }
   .ly_fv .el_fv_maincopy {

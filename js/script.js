@@ -102,6 +102,24 @@ $(".animate__rotateInTrigger").on("inview", function (event, isInView) {
     $(this).addClass("animate__animated animate__rotateIn"); //クラス名が付与
   }
 });
+$(".animate__bounceInDownTrigger").on("inview", function (event, isInView) {
+  if (isInView) {
+    //表示領域に入った時
+    $(this).addClass("animate__animated animate__bounceInDown"); //クラス名が付与
+  }
+});
+$(".animate__heartBeatTrigger").on("inview", function (event, isInView) {
+  if (isInView) {
+    //表示領域に入った時
+    $(this).addClass("animate__animated animate__heartBeat"); //クラス名が付与
+  }
+});
+$(".animate__rotateInTrigger").on("inview", function (event, isInView) {
+  if (isInView) {
+    //表示領域に入った時
+    $(this).addClass("animate__animated animate__rotateIn"); //クラス名が付与
+  }
+});
 $(".animate__pulseTrigger").on("inview", function (event, isInView) {
   if (isInView) {
     //表示領域に入った時
@@ -111,12 +129,15 @@ $(".animate__pulseTrigger").on("inview", function (event, isInView) {
     $(this).removeClass("animate__animated animate__pulse"); //クラス名が除去
   }
 });
-$(".sequenceTrigger").on("inview", function (event, isInView) {
-  if (isInView) {
-    //表示領域に入った時
-    $(this).addClass("cssanimation leMagnify sequence"); //クラス名が付与
-  } else {
-    //表示領域から出た時
-    $(this).removeClass("cssanimation leMagnify sequence"); //クラス名が除去
-  }
-});
+// $(".sequenceTrigger").on("inview", function (event, isInView) {
+//   if (isInView) {
+//     //表示領域に入った時
+//     $(this).addClass("cssanimation leMagnify sequence"); //クラス名が付与
+//   } else {
+//     //表示領域から出た時
+//     $(this).removeClass("cssanimation leMagnify sequence"); //クラス名が除去
+//   }
+// });
+
+
+
