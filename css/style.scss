@@ -678,6 +678,9 @@ header.HeightMin {
     padding-right: 4vw;
     max-width: 700px;
   }
+  :first-child .bl_section_img img {
+    margin-left: -40px;
+  }
   .el_section_ttl {
     &:first-child span {
       position: relative;

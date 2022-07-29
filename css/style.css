@@ -788,6 +788,10 @@ header.HeightMin .el_btn {
   max-width: 700px;
 }
 
+#whitening :first-child .bl_section_img img {
+  margin-left: -40px;
+}
+
 #whitening .el_section_ttl:first-child span {
   position: relative;
 }

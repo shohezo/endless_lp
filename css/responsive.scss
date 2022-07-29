@@ -380,6 +380,12 @@
       }
     }
   }
+  #whitening {
+    .bl_section {
+    :first-child .bl_section_img img {
+      margin-left: -12px;
+    }
+  }
   /* ヘルパークラス */
   .hp_br-sp {
     display: block;
